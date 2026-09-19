@@ -239,12 +239,19 @@ console.log('executing 1') // we will not see this one in the client.
 // SERVER executes.  CLIENT displays.
 // HTML starts the browser.  RSC payload keeps it updated.
 
+// '@' is automatically set in nextjs.
+import Header from "@/components/header";
+
 export default function Home() {
   // we will see this one in the browser and terminal which means it executes in the server.
   console.log("executing 2")
   return (
     <main>
-      <img src="/logo.png" alt="A server surrounded by magic sparkles." />
+      {/* move this image to the custom `Header` component
+          just verify we can set the custom component
+      */}
+      {/* <img src="/logo.png" alt="A server surrounded by magic sparkles." /> */}
+      <Header />
       <h1>Welcome to this NextJS Course!</h1>
       <Link href="/about">🔥 Let&apos;s get started! 🔥</Link>
     </main>

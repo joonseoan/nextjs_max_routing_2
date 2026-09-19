@@ -1,3 +1,13 @@
+/*
+  this global css is imported into the layout.tsx
+  this is available for the entire application.
+*/
+
+/*
+  icon.png is for another reserved png file.
+  icon is a reserved name!
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
 * {
